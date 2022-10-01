@@ -3,37 +3,39 @@ import pkg from "fs-extra";
 import consola from "consola";
 
 export async function release() {
+
   const {
     readJSONSync,
   } = pkg;
 
   const {
     version: oldVersion,
-  } = readJSONSync("../package.json");
+  } = readJSONSync("./package.json");
 
-  execSync("cd .. && bumpp --no-commit --no-tag --no-push", {
+
+  execSync(`npx bumpp`, {
     stdio: "inherit",
   });
 
   const {
     version,
-  } = readJSONSync("../package.json");
+  } = readJSONSync("package.json");
 
   if (oldVersion === version) {
     console.log("canceled");
     process.exit();
   }
 
-  execSync("cd .. && git add .", {
+  execSync("git add .", {
     stdio: "inherit",
   });
-  execSync(`cd .. && git commit -m "release-v${version}"`, {
+  execSync(`git commit -m "release-v${version}"`, {
     stdio: "inherit",
   });
-  execSync(`cd .. && git tag -a release-v${version} -m "v${version}"`, {
+  execSync(`git tag -a release-v${version} -m "v${version}"`, {
     stdio: "inherit",
   });
-  execSync(`cd .. && git push origin master"`, {
+  execSync(`git push origin master"`, {
     stdio: "inherit",
   });
 
