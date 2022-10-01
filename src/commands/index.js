@@ -1,2 +1,2 @@
 export * from './createPackage.js';
-export * from './release.js';
+export * from './bump.js';

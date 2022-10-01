@@ -2,7 +2,7 @@ import { execSync } from "child_process";
 import pkg from "fs-extra";
 import consola from "consola";
 
-export async function release() {
+export async function bump() {
 
   const {
     readJSONSync,

@@ -25,8 +25,8 @@
         "function": "createLayout"
     },
     {
-        "title": "Release Package",
-        "command": "release",
-        "function": "release"
+        "title": "Bump package version",
+        "command": "bump",
+        "function": "bump"
     }
 ]

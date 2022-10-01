@@ -1,7 +1,7 @@
 {
   "name": "@enab/cli",
   "type": "module",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Enab CLI",
   "main": "bin/index.js",
   "scripts": {
