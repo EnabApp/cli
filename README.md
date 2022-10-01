@@ -6,6 +6,7 @@
 - [ ] Create a component
 - [ ] Create a page
 - [ ] Create a layout
+- [x] Bump package version
 
 
 ## You may need
