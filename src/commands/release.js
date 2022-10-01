@@ -13,7 +13,7 @@ export async function release() {
   } = readJSONSync("./package.json");
 
 
-  execSync(`npx bumpp`, {
+  execSync(`npx bumpp --no-commit --no-tag --no-push`, {
     stdio: "inherit",
   });
 
