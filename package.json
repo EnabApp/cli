@@ -11,8 +11,7 @@
     "cli"
   ],
   "bin": {
-    "enab": "./bin/index.js",
-    "@enab/cli": "./bin/index.js"
+    "enab": "./bin/index.js"
   },
   "files": [
     "bin/",
@@ -26,6 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "arg": "^5.0.2",
+    "bumpp": "^8.2.1",
     "chalk": "^5.0.1",
     "cli-table": "^0.3.11",
     "commander": "^9.4.1",

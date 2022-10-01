@@ -23,5 +23,10 @@
         "title": "Create a layout",
         "command": "layout",
         "function": "createLayout"
+    },
+    {
+        "title": "Release Package",
+        "command": "release",
+        "function": "release"
     }
 ]
