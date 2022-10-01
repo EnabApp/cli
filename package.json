@@ -1,7 +1,7 @@
 {
   "name": "@enab/cli",
   "type": "module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Enab CLI",
   "main": "bin/index.js",
   "scripts": {
@@ -33,6 +33,7 @@
     "consola": "^2.15.3",
     "execa": "^6.1.0",
     "figlet": "^1.5.2",
+    "fs-extra": "^10.1.0",
     "gradient-string": "^2.0.2",
     "inquirer": "^9.1.2",
     "listr": "^0.14.3",
