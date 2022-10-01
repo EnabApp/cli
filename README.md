@@ -1,5 +1,8 @@
 # Enab Cli
 
+## Install
+`yarn install @enab/cli -g`
+
 ## Roadmap
 - [ ] Create a package
 - [ ] Create a composable
