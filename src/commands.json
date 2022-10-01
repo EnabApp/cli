@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Create a package",
+        "command": "package",
+        "function": "createPackage"
+    },
+    {
+        "title": "Create a composable",
+        "command": "composable",
+        "function": "createComposable"
+    },
+    {
+        "title": "Create a component",
+        "command": "component",
+        "function": "createComponent"
+    },
+    {
+        "title": "Create a page",
+        "command": "page",
+        "function": "createPage"
+    },
+    {
+        "title": "Create a layout",
+        "command": "layout",
+        "function": "createLayout"
+    }
+]
