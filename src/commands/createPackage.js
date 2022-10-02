@@ -5,19 +5,19 @@ async function promptForMissingOptions() {
   const defaultTemplate = 'JavaScript';
 
   const questions = [];
-    questions.push({
-      type: 'input',
-      name: 'name',
-      message: 'Please choose name of the package',
-    });
+  questions.push({
+    type: 'input',
+    name: 'name',
+    message: 'Please choose name of the package',
+  });
 
-    questions.push({
-      type: 'list',
-      name: 'template',
-      message: 'Please choose which project template to use',
-      choices: ['JavaScript', 'TypeScript'],
-      default: defaultTemplate,
-    });
+  questions.push({
+    type: 'list',
+    name: 'template',
+    message: 'Please choose which project template to use',
+    choices: ['JavaScript', 'TypeScript'],
+    default: defaultTemplate,
+  });
 
   // if (!options.git) {
   //   questions.push({
