@@ -1,7 +1,7 @@
 {
   "name": "@enab/cli",
   "type": "module",
-  "version": "1.0.2-beta.1",
+  "version": "1.0.2-beta.2",
   "description": "Enab CLI",
   "main": "bin/index.js",
   "scripts": {
@@ -14,9 +14,8 @@
     "enab": "./bin/index.js"
   },
   "files": [
-    "bin/",
-    "src/",
-    "templates/"
+    "bin/**/*",
+    "src/**/*"
   ],
   "publishConfig": {
     "access": "public"

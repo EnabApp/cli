@@ -12,12 +12,16 @@ import {
     readFileSync,
     writeFileSync,
     mkdirSync,
-    accessSync
+    accessSync,
+    realpathSync
 } from "fs";
 import consola from "consola";
 import {
-    dirname
+    dirname,
+    resolve
 } from "path";
+import { fileURLToPath } from 'url';
+
 
 async function promptForMissingOptions(templateData) {
     const path = templateData.path;
@@ -102,7 +106,10 @@ async function generate(filename, filepath, templatePath, options) {
             recursive: true
         });
     }
-    const templateContent = readFileSync(templatePath, "utf8");
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = dirname(__filename);
+    const templateDir = resolve(__dirname, '..', templatePath);
+      const templateContent = readFileSync(templateDir, "utf8");
     const content = templateContent.replace(/<{filename}>/g, filename);
     writeFileSync(filepath, content, "utf8");
 
