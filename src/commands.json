@@ -1,4 +1,10 @@
 [
+    
+    {
+        "title": "Enab Update",
+        "command": "update",
+        "function": "update"
+    },
     {
         "title": "Create a package",
         "command": "package",
@@ -28,5 +34,15 @@
         "title": "Bump package version",
         "command": "bump",
         "function": "bump"
+    },
+    {
+        "title": "Submodules Initate",
+        "command": "submodules:init",
+        "function": "subModuleInit"
+    },
+    {
+        "title": "Submodule Update",
+        "command": "submodules:update",
+        "function": "subModuleUpdate"
     }
 ]
