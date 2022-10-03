@@ -5,7 +5,7 @@
 
 ## Roadmap
 - [x] Update Enab
-- [x] Create a package
+- [ ] Create a package
 - [x] Create a composable
 - [x] Create a component
 - [x] Create a page
