@@ -13,7 +13,7 @@ figlet("E n a b", (err, data) => {
     console.log(gradient.cristal(data));
 });
 
-await new Promise(resolve => setTimeout(resolve, 500));
+await new Promise(resolve => setTimeout(resolve, 100));
 
 
 const command = commands.find(command => command.command == process.argv[2])
