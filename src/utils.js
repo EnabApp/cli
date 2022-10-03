@@ -30,7 +30,7 @@ export const camelCase = string => string
     .replace(/[^\w]+(.)/g, (ltr) => ltr.toUpperCase())
     .replace(/[^a-zA-Z]/g, '');
 
-export const pascalCase = string => string
+export const pascalCase = string => 
     (string.match(/[a-zA-Z0-9]+/g) || [])
     .map(w => `${w.charAt(0)
     .toUpperCase()}${w.slice(1)}`)
