@@ -1,4 +1,5 @@
 [
     "@enab/core",
-    "@enab/components"
+    "@enab/components",
+    "@enab/server"
 ]
